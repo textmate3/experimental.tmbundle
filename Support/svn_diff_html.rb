@@ -51,10 +51,10 @@ rescue
 end
 
 class DiffLine
-  attr :line_number , true
-  attr :code        , true
-  attr :status      , true
-  attr :filepath    , true
+  attr_accessor :line_number
+  attr_accessor :code
+  attr_accessor :status
+  attr_accessor :filepath
   def initialize(line_number , code , filepath , status)
     self.line_number = line_number
     self.code        = code

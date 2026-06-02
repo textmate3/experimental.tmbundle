@@ -23,7 +23,7 @@ doc = STDIN.read
 VALID_COLOR_BASIC = /#(?:[0-9a-f]{3}|[0-9a-f]{6})\b/i
 VALID_COLOR = /^#?(?:[0-9a-f]{3}|[0-9a-f]{6})$/i
 class HexColor
-  attr :color, true
+  attr_accessor :color
   def initialize(c)
     self.color = c
   end
